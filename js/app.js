@@ -10,15 +10,15 @@
         $routeProvider
             .when("/", {
                 controller: 'HomeController',
-                templateUrl: '/views/home.html'
+                templateUrl: 'whats-phone/views/home.html'
             })
             .when("/wishlist", {
                 controller: 'WishlistController',
-                templateUrl: '/views/wishlist.html'
+                templateUrl: 'whats-phone/views/wishlist.html'
             })
             .when("/mobile/:id", {
                 controller: 'MobileController',
-                templateUrl: '/views/mobile.html'
+                templateUrl: 'whats-phoneviews/mobile.html'
             })
     }
 
