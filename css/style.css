@@ -11,3 +11,8 @@
 .mobiles h3 {
     margin-top: 0;
 }
+
+.mobiles button {
+    padding: 0;
+    border: 0;
+}

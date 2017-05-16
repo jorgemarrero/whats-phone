@@ -13,6 +13,10 @@
         $scope.mobiles = [];
         $scope.numDesired = MobilesFactory.getNumDesired();
 
+        $scope.setDesired = MobilesFactory.setDesired;
+        $scope.unsetDesired = MobilesFactory.unsetDesired;
+        $scope.isDesired = MobilesFactory.isDesired;
+
 
         // Funciones factorias //
 

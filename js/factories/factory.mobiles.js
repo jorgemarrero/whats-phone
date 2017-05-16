@@ -70,7 +70,7 @@
                     }
                 });
             });
-            console.log(toReturn);
+
             return toReturn;
 
         }
@@ -90,7 +90,6 @@
                 }
             });
 
-            console.log(toReturn);
             return toReturn;
         }
 
@@ -119,7 +118,7 @@
             },
             {
                 id: 2,
-                name: 'iPhone 6s',
+                name: 'iPhone 6S',
                 brand: 'Apple',
                 photo: 'https://d2giyh01gjb6fi.cloudfront.net/phone_front/0001/06/thumb_5508_phone_front_big.jpeg',
                 memory: '4GB',
@@ -139,7 +138,7 @@
             },
             {
                 id: 4,
-                name: 'Huawei P8',
+                name: 'P8',
                 brand: 'Huawei',
                 photo: 'https://d2giyh01gjb6fi.cloudfront.net/phone_front/0001/04/thumb_3900_phone_front_big.jpeg',
                 memory: '2GB',
@@ -160,7 +159,7 @@
             },
             {
                 id: 6,
-                name: 'LG G6',
+                name: 'G6',
                 brand: 'LG',
                 photo: 'https://d2giyh01gjb6fi.cloudfront.net/phone_front/0001/60/thumb_59654_phone_front_big.jpeg',
                 memory: '4GB',

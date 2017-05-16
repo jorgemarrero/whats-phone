@@ -31,8 +31,9 @@
             <div class="col-md-6">
                 <h3>{{mobile.brand}}</h3>
                 <p>{{mobile.name}}</p>
-                <p><a href="/mobile/{{ mobile.id }}">Más detalles </a></p>
-                <p><a href="#">Add to my wishlist</a></p>
+                <p><a href="/mobile/{{ mobile.id }}">More details</a></p>
+                <button ng-show="isDesired(mobile.id)" ng-click="setDesired(mobile.id)" class="btn btn-link">Add wishlist</button>
+                <button ng-show="!isDesired(mobile.id)" ng-click="unsetDesired(mobile.id)" class="btn btn-link">Remove wishlist</button>
             </div>
         </div>
     </div>
