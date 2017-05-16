@@ -1,0 +1,40 @@
+<div class="container">
+
+    <h1>{{title}}</h1> <a href="/">Volver </a>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <img height="auto" width="200" class="picture" src="{{mobile.photo}}" alt="">
+        </div>
+
+        <div class="col-sm-8">
+            <div class="row">
+                <b>Modelo : </b> <span>{{mobile.name}}</span>
+            </div>
+
+            <div class="row">
+                <b>Marca : </b> <span>{{mobile.brand}}</span>
+            </div>
+
+            <div class="row">
+                <b>Memoria : </b> <span>{{mobile.memory}}</span>
+            </div>
+            
+            <div class="row">
+                <b>Pantalla : </b> <span>{{mobile.screen}}</span>
+            </div>
+
+            <div class="row">
+                <b>Bluetooth : </b> <span>{{mobile.bluetooth}}</span>
+            </div>
+
+            <div class="row">
+                <b>S.O. : </b> <span>{{mobile.os}}</span>
+            </div>
+
+            <button ng-show="isDesired(mobile.id)" ng-click="setDesired(mobile.id)" class="btn btn-primary">Añadir a favortivos</button>
+            <button ng-show="!isDesired(mobile.id)" ng-click="unsetDesired(mobile.id)" class="btn btn-warning">Quitar de favortivos</button>
+        </div>
+
+    </div>
+</div>
