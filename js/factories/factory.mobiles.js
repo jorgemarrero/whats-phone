@@ -3,10 +3,10 @@
 
     angular
         .module('EOI')
-        .factory('PhonesFactory', PhonesFactory);
+        .factory('MobilesFactory', MobilesFactory);
 
-    PhonesFactory.inject = ['PhonesFactory'];
-    function PhonesFactory() {
+    MobilesFactory.inject = ['MobilesFactory'];
+    function MobilesFactory() {
 
         if (localStorage.getItem("desired")) {
             var desired = JSON.parse(localStorage.getItem("desired"));
@@ -24,6 +24,7 @@
             setDesired: setDesired,
             unsetDesired: unsetDesired,
             getDesired: getDesired,
+            getNumDesired: getNumDesired,
             isDesired: isDesired
         }
 
@@ -72,6 +73,12 @@
             console.log(toReturn);
             return toReturn;
 
+        }
+
+        function getNumDesired() {
+            console.log (desired);
+            console.log(desired.length);
+            return desired.length;
         }
 
         function isDesired(id) {

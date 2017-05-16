@@ -5,12 +5,13 @@
         .module('EOI')
         .controller('HomeController', HomeController);
 
-    HomeController.$inject = ['$scope', 'PhonesFactory'];
-    function HomeController($scope, PhonesFactory) {
+    HomeController.$inject = ['$scope', 'MobilesFactory'];
+    function HomeController($scope, MobilesFactory) {
         // Variables $scope
         $scope.title = 'Bienvenido a la página principal';
 
         $scope.mobiles = [];
+        $scope.numDesired = MobilesFactory.getNumDesired();
 
 
         // Funciones factorias //
@@ -20,7 +21,7 @@
         ////////////////
 
         function activate() {
-            $scope.mobiles = PhonesFactory.getAll();
+            $scope.mobiles = MobilesFactory.getAll();
         }
 
     }

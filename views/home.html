@@ -1,12 +1,12 @@
 <nav class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">WhatsMobile</a>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone"></span> WhatsMobile</a> 
         </div>
 
         <ul class="nav navbar-nav">
-            <li role="presentation"><a href="/">Inicio</a></li>
-            <li role="presentation"><a href="/Deseados">Deseados</a></li>
+            <li role="presentation"><a href="/">Home</a></li>
+            <li role="presentation"><a href="/wishlist">Wishlist <span class="badge">{{numDesired}}</span></a></li>
         </ul>
 
         <form class="navbar-form navbar-right">
@@ -23,26 +23,15 @@
 </nav>
 
 <div class="container">
-    <h1>{{title}}</h1>
-
-    <div class="col-sm-4" ng-repeat="mobile in mobiles | filter:search track by mobile.id">
-        <div class="thumbnail mobile">
-
-            <img height="100" width="100" class="picture" src="{{mobile.photo}}" alt="">
-            <div class="caption">
-                <div class="row">
-                    <b>Modelo : </b> <span>{{mobile.name}}</span>
-                </div>
-
-                <div class="row">
-                    <b>Marca : </b> <span>{{mobile.brand}}</span>
-                </div>
-
+    <div class="row">
+        <div class="col-md-3 mobiles" ng-repeat="mobile in mobiles |  filter:search | orderBy: 'brand' track by mobile.id">
+            <div class="col-md-6">
+                <img src="{{mobile.photo}}" alt="">
             </div>
-            <div class="button text-right">
-
-                <a href="/Individual/{{ mobile.id }}">Más detalles </a>
-
+            <div class="col-md-6">
+                <h3>{{mobile.brand}}</h3>
+                <p>{{mobile.name}}</p>
+                <p><a href="/mobile/{{ mobile.id }}">Más detalles </a></p>
             </div>
         </div>
     </div>

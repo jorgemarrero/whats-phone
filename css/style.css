@@ -1,4 +1,13 @@
-.thumbnail>img{
+.thumbnail img{
     width: auto;
     height: 200px;
 }    
+.mobiles img{
+    width: auto;
+    height: 200px;
+    margin-bottom: 40px;
+}  
+
+.mobiles h3 {
+    margin-top: 0;
+}
