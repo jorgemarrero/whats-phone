@@ -25,7 +25,8 @@
             unsetDesired: unsetDesired,
             getDesired: getDesired,
             getNumDesired: getNumDesired,
-            isDesired: isDesired
+            isDesired: isDesired,
+            getBrands: getBrands
         }
 
         function getAll() {
@@ -91,6 +92,18 @@
             });
 
             return toReturn;
+        }
+
+        function getBrands() {
+            var brands = [];
+
+            getAll().forEach(function (element, position) {
+                if (brands.indexOf(element.brand) == -1) {
+                    brands.push(element.brand);
+                }
+            });
+            
+            return brands;
         }
 
         /********************************/

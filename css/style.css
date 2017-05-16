@@ -12,7 +12,11 @@
     margin-top: 0;
 }
 
-.mobiles button {
+.btn.btn-link {
     padding: 0;
     border: 0;
+}
+
+.list-group .btn.btn-link {
+    color: black;
 }

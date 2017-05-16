@@ -41,7 +41,20 @@
             </div>
         </div>
         <div class="col-md-3">
+            <p>Filter by:</p>
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Brands</div>
 
+                <!-- List group -->
+                <ul class="list-group">
+                    <a href=""></a>
+                    <li class="list-group-item" ng-repeat="brand in brands | orderBy track by $index">
+                        <button class="btn btn-link">{{brand}}</button>
+                    </li>
+
+                </ul>
+            </div>
         </div>
     </div>
 </div>
