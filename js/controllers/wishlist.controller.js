@@ -2,14 +2,15 @@
     'use strict';
     angular
         .module('EOI')
-        .controller('DeseadosController', DeseadosController);
+        .controller('WishlistController', WishlistController);
 
-    DeseadosController.$inject = ['$scope', 'PhonesFactory'];
+    WishlistController.$inject = ['$scope', 'MobilesFactory'];
 
-    function DeseadosController($scope, PhonesFactory) {
+    function WishlistController($scope, MobilesFactory) {
         // Variables $scope
         $scope.title = 'Bienvenido a la página de deseados';
         $scope.mobiles = [];
+        $scope.numDesired = MobilesFactory.getNumDesired();
 
         // Funciones factorias //
 
@@ -18,7 +19,7 @@
         /////////////////
 
         function activate() {
-            $scope.mobiles = PhonesFactory.getDesired();
+            $scope.mobiles = MobilesFactory.getDesired();
         }
 
     }

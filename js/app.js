@@ -12,13 +12,13 @@
                 controller: 'HomeController',
                 templateUrl: '/views/home.html'
             })
-            .when("/Deseados", {
-                controller: 'DeseadosController',
-                templateUrl: '/views/deseados.html'
+            .when("/wishlist", {
+                controller: 'WishlistController',
+                templateUrl: '/views/wishlist.html'
             })
-            .when("/Individual/:id", {
-                controller: 'IndividualController',
-                templateUrl: '/views/individual.html'
+            .when("/mobile/:id", {
+                controller: 'MobileController',
+                templateUrl: '/views/mobile.html'
             })
     }
 
