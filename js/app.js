@@ -14,7 +14,7 @@
             })
             .when("/wishlist", {
                 controller: 'WishlistController',
-                templateUrl: '/views/wishlist.html'
+                templateUrl: '/views/home.html'
             })
             .when("/mobile/:id", {
                 controller: 'MobileController',

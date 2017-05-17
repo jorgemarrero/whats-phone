@@ -74,6 +74,13 @@
 
             return toReturn;
 
+/*            if ('wishlist' in localStorage) {
+                var stringfied = localStorage.getItem('wishlist');
+                return JSON.parse(stringfied);
+            }
+            else {
+                return [];
+            }*/
         }
 
         function getNumDesired() {
